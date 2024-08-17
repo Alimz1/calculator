@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+    *{
+        font-family: 'poppins';
+    }
+.calculator-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #212121;
+    width: 639px;
+    margin: 100px auto;
+    height: 807px;
+    /* gap: 12px; */
+    border-radius: 11px;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: orange;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 122px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 28px;
+    
+}
+.display {
+    text-align: center;
+    font-size: 30px;
+}
+input:hover, input:focus, input:active, input:checked {
+    border: none;
+    border-radius: none;
+    outline: none;
+    user-select: none;
+}
+input {
+    margin: auto;
+    grid-area: 1 / 1 / span 4 / span 4;
+    width: 635px;
+    height: 94px;
+    border-radius: 11px;
+    border: none;
+    background: #414141;
+    text-align: right;
+    font-size: 100px;
+}
+
+.button:hover {
+    background-color: #f1462cfd;
+}
+body {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <input type="text" readonly placeholder="0">
+        <div class="button" id="ac">AC</div>
+        <div class="button" id="del">DEL</div>
+        <div class="button" id="percentage">%</div>
+        <div class="button">/</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button">*</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button">-</div>
+        <div class="button">0</div>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button">+</div>
+        <div class="button">.</div>
+        <div class="button" id="equal">=</div>
+
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>
